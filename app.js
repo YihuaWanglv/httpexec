@@ -6,7 +6,7 @@ const app = express()
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/cmd', (req, res) => {
-	shell.exec("/d/datas/temp/shelltest.sh");
+	shell.exec("/home/app/build/update-blog-iyihua.sh");
 	res.send('exec ok!')
 })
 
